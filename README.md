@@ -4,7 +4,10 @@ Display Linux system information
 
 ```bash 
 #uname -a
-```
+``` 
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/uname-r.PNG)
+
 Display kernel release information
 
 ```bash 
