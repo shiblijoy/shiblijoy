@@ -6,7 +6,7 @@ Display Linux system information
 #uname -a
 ``` 
 
-![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/uname-r.PNG)
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/uname-a.PNG)
 
 Display kernel release information
 
@@ -14,12 +14,14 @@ Display kernel release information
 #uname -r
 ```
 
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/uname-r.PNG)
 
 Show which version of redhat installed
 
 ```bash 
 # cat /etc/redhat-release
 ```
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/release.PNG)
 
 Show how long the system has been running + load
 
@@ -27,17 +29,22 @@ Show how long the system has been running + load
 # uptime
 ```
 
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/uptime.PNG)
+
 Show system host name
 
 ```bash 
 # hostname
 ```
 
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/hostname.PNG)
+
 Display the IP addresses of the host
 
 ```bash 
 # hostname -I
 ```
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/hostname-i.PNG)
 
 Show system reboot history
 
@@ -45,11 +52,15 @@ Show system reboot history
 # last reboot
 ```
 
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/lastreboot.PNG)
+
 Show the current date and time
 
 ```bash 
 # date
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/date.PNG)
 
 Show this month's calendar
 
@@ -57,17 +68,24 @@ Show this month's calendar
 # cal
 ```
 
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cal.PNG)
+
+
 Display who is online
 
 ```bash 
 # w
 ```
 
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/w.PNG)
+
 Who you are logged in as
 
 ```bash 
 # whoami
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/whoami.PNG)
 
 
 ## Navigating Path
