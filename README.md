@@ -65,3 +65,32 @@ Who you are logged in as
 ```bash 
 #whoami
 ```
+
+
+## Navigating Path
+
+The pwd command displays the full path name of the current location, which helps determine appropriate syntax for reaching files using relative path names. 
+
+```bash
+#pwd
+```
+
+The ls command lists directory contents for the specified directory, or if no directory is given for the current directory.
+
+```bash 
+# ls
+```
+
+Use the cd command to change directories.
+
+```bash
+# cd /etc
+```
+
+The ls command has multiple options for displaying attribute on files. The most common and useful are –l (long listing format), -a (all files includes hidden files) and –R (recursive)
+
+```bash
+# ls-l
+# ls -la
+# ls -R
+```
