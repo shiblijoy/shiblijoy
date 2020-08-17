@@ -130,7 +130,7 @@ use the cd command with .. to change the working directory to previous working d
 The ls command has multiple options for displaying attribute on files. The most common and useful are –l (long listing format), -a (all files includes hidden files) and –R (recursive)
 
 ```bash
-# ls-l
+# ls -l
 # ls -la
 # ls -R
 ```
