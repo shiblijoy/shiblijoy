@@ -15,55 +15,55 @@ Display kernel release information
 Show which version of redhat installed
 
 ```bash 
-#cat /etc/redhat-release
+# cat /etc/redhat-release
 ```
 
 Show how long the system has been running + load
 
 ```bash 
-#uptime
+# uptime
 ```
 
 Show system host name
 
 ```bash 
-#hostname
+# hostname
 ```
 
 Display the IP addresses of the host
 
 ```bash 
-#hostname -I
+# hostname -I
 ```
 
 Show system reboot history
 
 ```bash 
-#last reboot
+# last reboot
 ```
 
 Show the current date and time
 
 ```bash 
-#date
+# date
 ```
 
 Show this month's calendar
 
 ```bash 
-#cal
+# cal
 ```
 
 Display who is online
 
 ```bash 
-#w
+# w
 ```
 
 Who you are logged in as
 
 ```bash 
-#whoami
+# whoami
 ```
 
 
@@ -72,7 +72,7 @@ Who you are logged in as
 The pwd command displays the full path name of the current location, which helps determine appropriate syntax for reaching files using relative path names. 
 
 ```bash
-#pwd
+# pwd
 ```
 
 The ls command lists directory contents for the specified directory, or if no directory is given for the current directory.
@@ -85,6 +85,25 @@ Use the cd command to change directories.
 
 ```bash
 # cd /etc
+```
+
+Use the cd command to change working directory to logged in user home directory.
+
+```bash
+# cd 
+# cd ~
+```
+
+use the cd command with .. to change the working directory to parent directory
+
+```bash
+# cd ..
+```
+
+use the cd command with .. to change the working directory to previous working directory
+
+```bash
+# cd -
 ```
 
 The ls command has multiple options for displaying attribute on files. The most common and useful are –l (long listing format), -a (all files includes hidden files) and –R (recursive)
