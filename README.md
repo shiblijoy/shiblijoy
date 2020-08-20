@@ -229,20 +229,41 @@ The cp command copies one or more files to become new, independent files. Syntax
 The mv command renames files in the same directory, or relocates files to a new directory. File contents remain unchanged. Files moved to a different file system require creating a new file by copying the source file, then deleting the source file.
 
 ```bash
+# ls
 # mv file2 file2.txt
-# mv file2 /tmp/
+# ls
+# ls
+# mv file3 /tmp/
+# ls
+# ls /tmp
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/mv.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/mvdl.PNG)
 
 Default syntax for rm deletes files, but not directories. Deleting a directory, and potentially many subdirectories and files bellow it, require the –r recursive option. Using -i will interactively prompt for each deletion. This is essentially the opposite of –f which will force the deletion without prompting the user. There is no command-line undelete feature, nor a trash bin from which to restore.
 
 ```bash
-# rm file3
+# ls
+# rm filename1
+# ls
+# ls
 # rm -rf dir2
+# ls
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/rm.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/rmd.PNG)
 
 The rmdir directoris only if empty . Removed directories cannot be undelete.
 
 ```bash
+# ls
 # rmdir dir
+# ls
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/rmdir.PNG)
 
