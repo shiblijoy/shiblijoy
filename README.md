@@ -76,6 +76,8 @@ You can see your previously run command by executing 'history' command
 # history
 ```
 
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/history.PNG)
+
 Display who is online
 
 ```bash 
@@ -101,11 +103,15 @@ The pwd command displays the full path name of the current location, which helps
 # pwd
 ```
 
-The ls command lists directory contents for the specified directory, or if no directory is given for the current directory.
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/pwd.PNG)
+
+The ls command lists directory contents for the specified directory, or if no directory is given for the current directory. as in if I enter "ls /etc" it will display the files and directories under /etc directory 
 
 ```bash 
-# ls
+# ls /etc
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/lsetc.PNG)
 
 Use the cd command to change directories.
 
