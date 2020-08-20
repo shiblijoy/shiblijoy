@@ -323,3 +323,102 @@ To read a file in a reverse direction we can use "tac" command
 ```bash
 # less /var/log/messages
 ```
+
+
+### User Management
+
+We can add user in our system by using command "useradd" or "adduser" and we check users information with "id" command
+
+```bash
+# useradd user1
+# id user1
+# adduser user2
+# id user2
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/user.PNG)
+
+We can add user group in our system by using command "groupadd" and we check group information by reading the file /etc/group
+
+```bash
+# groupadd mygroup
+# tail -n 1 mygroup
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/group.PNG)
+
+We can change the users' default parameter with certain option added with the command "useradd" when we creating a new user. As like with -u option we can change the user id, -g the primary group, -G secondery group, -s shell, -d home directory of the user and with -c we can add comment for the user. We can use this option separately or at the same command. And we can see the users info by using "getent passwd" commad.
+
+```bash
+# useradd -g mygroup -G user1 -u 2000 -s /bin/sh -d /var/customuser -c "this is a user with custom parameters" customuser
+# getent passwd customuser
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/userc.PNG)
+
+To set a users password we can use the command "passwd".
+
+```bash
+# passwd user1
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/passwd.PNG)
+
+Every user can change their own password by using passwd. Note: only root can change other users password on behalf of them.
+
+```bash
+# passwd
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/passwdu.PNG)
+
+With passwd command we can lock and unlock a user by usnig -l and -u option with it
+
+```bash
+# passwd -l user1
+# passwd -u user1
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/passwdlu.PNG)
+
+We can expire a user passwd by using -e option with passwd command
+
+```bash
+# passwd -e user1
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/passwde.PNG)
+
+We can check the passwd aging with the command "chage" with a inclusion of option -l followed by the username
+
+```bash
+# chage -l user1
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/chagel.PNG)
+
+We can change the password aging with inclusion of several option as the minimum days between the password change with option -m, minimum days between the password change -M, warning given by before the password expire -W, make the password inactive -I and Expire the account with -E.
+
+```bash
+# chage -m 3 -M 30 -W 5 user1
+# chage -l user1
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/chageo.PNG)
+
+To delete a user we can use the command "userdel". Note: we have to use -r option with userdel otherwise the file created for the user will remains on the system.
+
+```bash
+# userdel user2
+# id user2
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/userdel.PNG)
+
+We can use "groupdel" to delete a group
+
+```bash
+# groupdel group1
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/groupdel.PNG)
