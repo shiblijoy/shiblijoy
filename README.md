@@ -422,3 +422,12 @@ We can use "groupdel" to delete a group
 ```
 
 ![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/groupdel.PNG)
+
+To change a existing users parameter we can use "usermod" with options like  with -u option we can change the user id, -g the primary group, -G secondery group, -s shell, -d home directory of the user and with -c we can add comment for the user
+
+```bash
+# usermod -g user1 -G mygroup -s /bin/bash -u 1005 -c "with changed parameter" customuser
+# getent passwd customuser
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/usermod.PNG)
