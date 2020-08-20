@@ -113,30 +113,41 @@ The ls command lists directory contents for the specified directory, or if no di
 
 ![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/lsetc.PNG)
 
-Use the cd command to change directories.
+Use the cd command to change directories. As example if you run "cd /etc" it will change the directory to /etc
 
 ```bash
 # cd /etc
 ```
 
-Use the cd command to change working directory to logged in user home directory.
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cdetc.png)
+
+Use the cd command to change working directory to logged in user home directory. "cd" and "cd ~" both command will change the working directory to the logged in users home dorectoy.
 
 ```bash
 # cd 
 # cd ~
 ```
 
-use the cd command with .. to change the working directory to parent directory
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cd.png)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cdhome.png)
+
+use the cd command with .. to change the working directory to parent directory. It works like the the up button of windows explorer. By default every users home directory situated in /home directory so if we execute the command "cd .." from any users directory it will take you the the directory /home.
 
 ```bash
 # cd ..
 ```
 
-use the cd command with .. to change the working directory to previous working directory
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cdup.png)
+
+use the cd command with - to change the working or current directory to previous working directory. This means if I change the directory to /etc from /home and then I executed "cd -" it will take back you to /home
 
 ```bash
 # cd -
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cdprev.PNG)
+
 
 The ls command has multiple options for displaying attribute on files. The most common and useful are –l (long listing format), -a (all files includes hidden files) and –R (recursive)
 
@@ -145,39 +156,73 @@ The ls command has multiple options for displaying attribute on files. The most 
 # ls -la
 # ls -R
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/lsl.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/lsla.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/lpr.PNG)
 ### File and Directory Management
 use mkdir command to create directory
 
 ```bash
-# mkdir dir/subdir
+# mkdir dir
+# ls
 ```
 
 The mkdir command creates one or more directories or subdirectories, generating errors if the filename already exists or when attempting to create a directory in a parent directory that doesn’t exist. The –p parent option creates missing parent directories for the requested destination.
 
 ```bash
+# mkdir dir2/subdir2 
 # mkdir dir2/subdir2 -p
+#ls
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/mkdirerr.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/mkdirp.PNG)
 
 use touch command to create directory
 
 ```bash
 # touch file1
+# ls
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/touch.PNG)
 
 to create multiple command with command
 
 ```bash
 # touch file1 file2 file3
+# ls
 # touch filename{1..5}
+# ls
 # touch file.txt /tmp/file.txt
+# ls
+# ls /tmp
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/touchm.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/touchml.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/touchmdl.PNG)
 
 The cp command copies one or more files to become new, independent files. Syntax allows copying an existing file to a new file in the current or another directory, or copying multiple files into another directory. In any destination, new file names must be unique. If the new file name is not unique, the copy command will overwrite the existing file. When copying multiple files with one command, the last argument must be a directory.
 
 ```bash
-# cp file1 file1.txt
-#cp file /tmp/
+# ls
+# cp file1 myfile.txt
+# ls
+# ls /tmp
+# cp file1 /tmp/
+# ls /tmp
 ```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cp.png)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cpdl.PNG)
 
 The mv command renames files in the same directory, or relocates files to a new directory. File contents remain unchanged. Files moved to a different file system require creating a new file by copying the source file, then deleting the source file.
 
