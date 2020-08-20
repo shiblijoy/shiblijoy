@@ -70,6 +70,11 @@ Show this month's calendar
 
 ![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cal.PNG)
 
+You can see your previously run command by executing 'history' command
+
+```bash
+# history
+```
 
 Display who is online
 
