@@ -170,6 +170,8 @@ use mkdir command to create directory
 # ls
 ```
 
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/mkdir.PNG)
+
 The mkdir command creates one or more directories or subdirectories, generating errors if the filename already exists or when attempting to create a directory in a parent directory that doesn’t exist. The –p parent option creates missing parent directories for the requested destination.
 
 ```bash
