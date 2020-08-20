@@ -257,7 +257,7 @@ Default syntax for rm deletes files, but not directories. Deleting a directory, 
 
 ![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/rmd.PNG)
 
-The rmdir directoris only if empty . Removed directories cannot be undelete.
+The rmdir directoris only if empty. Removed directories cannot be undelete.
 
 ```bash
 # ls
@@ -267,3 +267,59 @@ The rmdir directoris only if empty . Removed directories cannot be undelete.
 
 ![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/rmdir.PNG)
 
+### Read a file in Linux
+
+To read a file one of the most popular command is "cat". cat followed by by the file name or path will display the file content in your shell
+
+```bash
+# cat myfile
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/cat.PNG)
+
+To read a file in a reverse direction we can use "tac" command
+
+```bash
+# tac myfile
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/tac.PNG)
+
+"head" is a command to read first 10 lines of a file you can specify the line number by using -n command followed by the desired line number
+
+```bash
+# head /etc/passwd
+# head -n 3 /etc/passwd
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/head.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/headn.PNG)
+
+"tail" is a command to read last 10 lines of a file you can specify the line number by using -n command followed by the desired line number. and we can use -f option to follow the file continiously, which is very useful to read logs 
+
+```bash
+# tail /etc/passwd
+# tail -n 3 /etc/passwd
+# tail -f 
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/tail.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/tailn.PNG)
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/tailf.PNG)
+
+
+"head" is a command which is used for reading big file can't read with single screen and have to scroll down. We can scroll the file downwards by pressing "Enter" or "Space" button. And it will take you out from the file when you scroll it down all the way to the end of the file.
+
+```bash
+# more /var/log/messages
+```
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/more.PNG)
+
+"less" is a command which is used for reading big file can't read with single screen and have to scroll up and down. We can scroll the file upwards or downwards by pressing "Up Arrow" or "Down Arrow" button. And you have to press the button "q" to get out from the file.
+
+```bash
+# less /var/log/messages
+```
