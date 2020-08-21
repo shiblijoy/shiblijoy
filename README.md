@@ -431,3 +431,33 @@ To change a existing users parameter we can use "usermod" with options like  wit
 ```
 
 ![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/usermod.PNG)
+
+
+### FILE PERMISSIONS
+Linux permision examples
+```
+         PERMISSION      EXAMPLE
+         U   G   W
+        rwx rwx rwx     chmod 777 filename
+        rwx rwx r-x     chmod 775 filename
+        rwx r-x r-x     chmod 755 filename
+        rw- rw- r--     chmod 664 filename
+        rw- r-- r--     chmod 644 filename
+```
+#### NOTE: Use 777 sparingly!
+
+```
+
+        U = User
+        G = Group
+        W = World
+
+        r = Read
+        w = write
+        x = execute
+        - = no access
+
+	    r = 4
+	    w = 2
+        x = 1
+```
