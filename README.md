@@ -458,3 +458,101 @@ Linux permision examples
 		w = 2
         x = 1
 
+
+
+We can check a file's or directory's permission or ownership or group ownership by using "ls -l" command. And change the ownership to another user by using "chown" command
+
+```bash
+# ls -l file
+# chown shibli file
+# ls -l file
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/chown.PNG)
+
+We can change the group ownership of a file or directory by using "chgrp" command
+
+```bash
+# ls -l file
+# chgrp mygroup file
+# ls -l file
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/chgrp.PNG)
+
+
+We can change ownership and group ownership with a same command of "chown" in that case we have separate the user and group name by ":"
+
+```bash
+# ls -l file
+# chown root:root file
+# ls -l file
+```
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/chowna.PNG)
+
+With "chmod" command we can change the permissions of a file as described in the note earlier. by using Numric value :
+
+```bash
+# ls -l file
+# chmod 777 file
+# ls -l file
+# chmod 666 file
+# ls -l file
+# chmod 644 file
+# ls -l file
+# chmod 000 file
+# ls -l file
+```
+
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/chmodn.PNG)
+
+Or we can change the value specificly
+
+```bash
+# ls -l file
+# chmod u+r file
+# ls -l file
+# chmod u+w file
+# ls -l file
+# chmod g+r file
+# ls -l file
+# chmod o+r file
+# ls -l file
+# chmod u+x file
+# ls -l file
+# chmod ug=rw,o=r file
+# ls -l file
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/chmodv.PNG)
+
+"Set user ID" or "SUID" is one of the three special permissions, by using SUID bit we can run a file with its owners permission.
+
+```bash
+# ls -l file
+# chmod u+s file
+# ls -l file
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/suid.PNG)
+
+"Set group ID" or "SGID" is one of the three special permissions, by using SGID on a directory we can pass on the group ownership to is child directorys'.
+
+```bash
+# ls -ld dir
+# chmod g+s dir
+# ls -ld dir
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/guid.PNG)
+
+Sticky bit normally use for a common directory where everyone has all the permissions but because of the sticky bit one can't change or delete another users file.
+
+```bash
+# ls -l file
+# chmod o+t file
+# ls -l file
+```
+
+![alt text](https://github.com/shiblijoy/shiblijoy/blob/master/sticky.PNG)
